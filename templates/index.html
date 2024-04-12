@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block metatags %}
+<title>Alex McAnnally</title>
+<meta name="description" content="Alex McAnnally">
+{% endblock %}
+
+{% block contents %}
+<div class="container">
+    <div class="row">
+        <div class="col-4">
+            <img src="{{url_for('static', filename='images/AlexMcAnnally.jpg')}}" class="img-fluid" alt="Alex McAnnally">
+        </div>
+        <div class="col-8">
+            <p class="lead">Welcome to my little corner of the web! I'm excited to have you here.</p>
+            <p class="lead">With over a decade of experience in the ever-dynamic realm of technology, I've provided rapid and client-focused data analysis support for hundreds of clients. As a seasoned Data Analyst, I specialize in leveraging SQL and SAS methodologies to create raw data into powerful information and propel projects to new heights.</p>
+            <p class="lead">I'm adept at articulating complex technical concepts to users of varying technical knowledge. Accomplished in an array of software applications, programming languages, and relational database systems. I'm exceptionally skilled in a diverse range of SQL languages including T-SQL, MySQL, and PostgreSQL. I've also done work in SAS, PowerShell, Python, etc.</p>
+            <p class="lead">You can see my GitHub account <a href="https://github.com/amcanna1ly" target="_blank">here</a> as well as my resume <a href="{{url_for('static', filename='content/AlexMcAnnallyResume.pdf')}}"
+                target="_blank">here</a>.</p>
+            <p class="lead">Let's get going!</p>
+            <p class="lead">Alex McAnnally</p>
+            <p class="lead">Database Analyst & Interested in Things That Go Beep</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
